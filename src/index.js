@@ -4,10 +4,6 @@ import populateMenu from './menu';
 
 populateHomepage();
 
-//1) find images of managers Dmitry and Tatiana 
-//2) add clearing of nodes/disabling the button/some sort of check
-// if the same button is pressed twice in a row 
-
 const homepage = document.getElementById('Homepage');
 homepage.addEventListener('click', populateHomepage);
 

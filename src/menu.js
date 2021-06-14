@@ -8,7 +8,6 @@ function importAll(r) {
   
 const images = importAll(require.context('./menu', false, /\.(png|jpe?g|svg)$/));
 
-//images
 
 function createMenu(){
     const menu = document.createElement('div');
@@ -63,10 +62,6 @@ function createCourse(courseId, courseName, dishes){
 
     return course;
 }
-
-//after the break
-//1) write the logic for switching between tabs
-//2) style the menu and contact pages
 
 function createDish(dishInfo){
     const dish = document.createElement('div');

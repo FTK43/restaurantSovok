@@ -1,14 +1,3 @@
-//to do -> header will have navbar with buttons, 
-//leading to different pages
-//move "our restaurant" from header to main div
-
-//1) create header
-//2) create main div
-//3) create h1
-//4) create info
-//5) create address
-//6) create footer
-
 function createheader() {
     const header = document.createElement('header');
     header.classList.add('header');
@@ -27,22 +16,11 @@ function createheader() {
 }
 
 function createButton(buttonId){
-    //button
+    
     const newButton = document.createElement('button');
-    //newButton.type = 'radio';
     newButton.name = 'tabs';
     newButton.id = buttonId;
     newButton.innerHTML = buttonId;
-
-    //label
-    /*const newLabel = document.createElement('label');
-    newLabel.for = buttonId;
-    newLabel.innerHTML = buttonId;*/
-
-    //const newDiv = document.createElement('div');
-    
-    //newDiv.appendChild(newButton);
-    //newDiv.appendChild(newLabel);
 
     return newButton;
 }
