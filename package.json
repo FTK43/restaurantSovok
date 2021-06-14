@@ -1,0 +1,18 @@
+{
+  "name": "restaraunt",
+  "version": "1.0.0",
+  "description": "restaraunt page from TOP curriculum",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AK",
+  "license": "ISC",
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^7.0.1",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-image-resize-loader": "^4.1.0"
+  }
+}
