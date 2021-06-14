@@ -8,33 +8,34 @@ function importAll(r) {
   
 const images = importAll(require.context('./menu', false, /\.(png|jpe?g|svg)$/));
 
+console.log(images);
 
 function createMenu(){
     const menu = document.createElement('div');
-    menu.id = 'menu';
+    menu.id = 'menu';    
 
     const mainDishes = [
-        ['Borshcht', '../dist/images/src/menu/borshcht.jpeg', '3.50'],
-        ['Kharcho', '../dist/images/src/menu/kharcho.jpeg', '3.25'],
-        ['Shchi', '../dist/images/src/menu/shchi.jpeg', '3.00']
+        ['Borshcht', 'images/src/menu/borshcht.jpeg', '3.50'],
+        ['Kharcho', 'images/src/menu/kharcho.jpeg', '3.25'],
+        ['Shchi', 'images/src/menu/shchi.jpeg', '3.00']
     ];
 
     const secondaryDishes = [
-        ['Grechka with sausages', '../dist/images/src/menu/grechka.jpeg', '1.50'],
-        ['Rozhki with chicken meat', '../dist/images/src/menu/rozhki.jpeg', '1.25'],
-        ['Perlovka with mushrooms', '../dist/images/src/menu/perlovka.jpeg', '0.75']
+        ['Grechka with sausages', 'images/src/menu/grechka.jpeg', '1.50'],
+        ['Rozhki with chicken meat', 'images/src/menu/rozhki.jpeg', '1.25'],
+        ['Perlovka with mushrooms', 'images/src/menu/perlovka.jpeg', '0.75']
     ];
 
     const desserts = [
-        ['Pirozhki sladkie (with jam)', '../dist/images/src/menu/pierogi1.jpeg', '1.00'],
-        ['Pirozhki (cabbage and potatoes)', '../dist/images/src/menu/pierogi2.jpeg', '0.80'],
-        ['Blini (pancakes)', '../dist/images/src/menu/pancakes.jpeg', '0.50']
+        ['Pirozhki sladkie (with jam)', 'images/src/menu/pierogi1.jpeg', '1.00'],
+        ['Pirozhki (cabbage and potatoes)', 'images/src/menu/pierogi2.jpeg', '0.80'],
+        ['Blini (pancakes)', 'images/src/menu/pancakes.jpeg', '0.50']
     ];
 
     const drinks = [
-        ['vodka', '../dist/images/src/menu/vodka.jpeg', '0.33'],
-        ['kompot (berry drink)', '../dist/images/src/menu/kompot.jpeg', '0.15'],
-        ['black tea', '../dist/images/src/menu/tea.jpeg', '0.05']
+        ['vodka', 'images/src/menu/vodka.jpeg', '0.33'],
+        ['kompot (berry drink)', 'images/src/menu/kompot.jpeg', '0.15'],
+        ['black tea', 'images/src/menu/tea.jpeg', '0.05']
     ];
 
     menu.appendChild(createCourse('firstCourse', 'the main Course', mainDishes));
@@ -73,7 +74,9 @@ function createDish(dishInfo){
     dishDescr.innerHTML = dishInfo[0] + '.<br> The price is: '+ dishInfo[2]+'$!';
     //img
     const dishImg = document.createElement('img');
+    
     dishImg.src = dishInfo[1];
+
     dishImg.alt = 'a picture of: ' + dishInfo[0];
     dishImg.classList.add('dishPic');
 
