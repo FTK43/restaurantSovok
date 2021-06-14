@@ -30,7 +30,7 @@ function createManagers(){
                         "Phone: +7(000)000-00-00 <br>" +
                         "email: dmitry@sovok.su";
 
-    manager.appendChild(createImg('/dist/images/src/contacts/dmitry.jpeg'));
+    manager.appendChild(createImg('images/src/contacts/dmitry.jpeg'));
 
     const headChef = document.createElement('div');
     headChef.classList.add('manager');
@@ -38,7 +38,7 @@ function createManagers(){
                          "Phone: +7(000)000-00-01 <br>" +
                          "email: tatyana@sovok.su";
 
-    headChef.appendChild(createImg('/dist/images/src/contacts/tatyana.jpeg'));
+    headChef.appendChild(createImg('images/src/contacts/tatyana.jpeg'));
     
     managers.appendChild(manager);
     managers.appendChild(headChef);
