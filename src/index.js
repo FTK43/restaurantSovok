@@ -1,6 +1,8 @@
 import populateHomepage from './homepage';
 import populateContacts from './contact';
 import populateMenu from './menu';
+//import css from "./style.css";
+import './style.css'
 
 populateHomepage();
 

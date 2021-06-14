@@ -9,8 +9,10 @@
   "author": "AK",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^5.2.6",
     "file-loader": "^6.2.0",
     "image-webpack-loader": "^7.0.1",
+    "style-loader": "^2.0.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.2",
     "webpack-image-resize-loader": "^4.1.0"

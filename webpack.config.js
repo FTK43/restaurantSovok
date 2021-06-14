@@ -8,7 +8,8 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   module: {
-    rules: [{
+    rules: [
+      {
       test: /\.(png|jpe?g|webp|tiff?)$/i,
       use: [
         {
@@ -25,7 +26,17 @@ module.exports = {
             quality: 100
           },
         },
-      ]
-    }]
-  }
+      ],
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      }
+  ], 
+  },
 };
+
